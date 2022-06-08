@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MazeApp</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+    <script type="module">
+        import { initializeApp } from "../node_modules/firebase/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBFcekDC39TcFS6rxdkRmHPVAk4VpdU0Qs",
+            authDomain: "js-final-project-c2b21.firebaseapp.com",
+            projectId: "js-final-project-c2b21",
+            storageBucket: "js-final-project-c2b21.appspot.com",
+            messagingSenderId: "734208367085",
+            appId: "1:734208367085:web:d4fde5f80b1199e1672fe4"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="heading"></div>
+    <div id="root"></div>
+    <div id="latest-maze"></div>
+    <div id="maze"></div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
